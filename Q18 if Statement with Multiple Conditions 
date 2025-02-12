@@ -1,0 +1,27 @@
+/* Create a program that takes two integer inputs and an arithmetic operator (+, -, *, /) 
+from the user, then performs the corresponding operation. Use if, else if, and else statements
+to handle each case and print the result  */
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num1, num2;
+    char op;
+    cout << "Enter two numbers: ";
+    cin >> num1 >> num2;
+    cout << "Enter an operator (+, -, *, /): ";
+    cin >> op;
+
+    if (op == '+')   
+        cout << "Result: " << num1 + num2 ;
+    else if (op == '-')
+        cout << "Result: " << num1 - num2 ;
+    else if (op == '*')
+        cout << "Result: " << num1 * num2 ;
+    else if (op == '/')
+        cout << "Result: " << num1 / num2 ;
+    else
+        cout << "Invalid operator";
+
+    return 0;
+}
