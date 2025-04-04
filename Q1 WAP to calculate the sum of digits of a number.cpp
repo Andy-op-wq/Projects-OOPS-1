@@ -6,8 +6,8 @@ int sumOfDigits(int n) {
     int sum = 0;
     while (n > 0) {
         int digit = n % 10;  // Get the last digit
-        sum = sum + digit;   // Add the digit to sum
-        n = n / 10;          // Remove the last digit
+        sum = sum + digit;  // Add the digit to sum
+        n = n / 10;         
     }
     return sum;
 }
